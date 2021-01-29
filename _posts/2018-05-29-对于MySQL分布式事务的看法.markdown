@@ -2,7 +2,7 @@
 layout: post
 title:  "对于 MySQL 分布式事务的看法"
 date:   2020-01-29 18:05:55 +0300
-image:  10.jpg
+image:  
 tags:   MYSQL
 ---
 # 一致性理论
