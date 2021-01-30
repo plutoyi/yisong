@@ -1,170 +1,141 @@
-Zolan - Modern & Minimal Theme for Jekyll
-======
-Zolan is a minimal blog theme for Jekyll.
+<p align="center">
+<img src="https://i.loli.net/2017/09/07/59b1367f76fdb.png" alt="Material Render Phone">
+</p>
 
-* * *
+<h1 align="center"><a href="https://material.viosey.com" target="_blank">Material Theme</a></h1>
 
-Table of Contents
------------------
-*   [Features](#features)
-*   [Demo](#demo)
-*   [Deployment](#deployment)
-*   [Posts](#posts)
-*   [Disqus Comments](#DisqusComments)
-*   [Instagram](#instagram)
-*   [Google Analytics](#GoogleAnalytics)
-*   [Update favicon](#UpdateFavicon)
-*   [Credits](#Credits)
-*   [Support](#Support)
+> Nature, Pure | 原质，纯粹
 
-* * *
+<p align="center">
+<img alt="Version" src="https://img.shields.io/badge/version-1.5.6-757575.svg?style=flat-square"/>
+<a href="https://viosey.com"><img alt="Author" src="https://img.shields.io/badge/author-Viosey-red.svg?style=flat-square"/></a>
+<a href="https://hexo.io"><img alt="Hexo" src="https://img.shields.io/badge/hexo-3.0+-0e83cd.svg?style=flat-square"/></a>
+<a href="https://nodejs.org/"><img alt="node.js" src="https://img.shields.io/badge/node.js-6.0%2B-43853d.svg?style=flat-square"/></a>
+<a href="https://travis-ci.org/viosey/hexo-theme-material"><img alt="Build Status" src="https://img.shields.io/travis/viosey/hexo-theme-material.svg?style=flat-square"/></a>
+<a href="https://www.npmjs.com/package/hexo-material"><img alt="npm" src="https://img.shields.io/npm/dt/hexo-material.svg?style=flat-square"/></a>
+</p>
 
-### Features
 
-* 100% responsive and clean theme
+## Contents 目录
 
-* Optimized for mobile devices
+- [Introduction 介绍](#introduction-介绍)
+- [Demo 演示](#demo-演示)
+- [Download 下载](#download-下载)
+- [Docs 文档](#docs-文档)
+- [Contributing 贡献](#contributing-贡献)
+- [License 许可证](#license-许可证)
+- [Changelog 更新日志](#changelog-更新日志)
+- [Support 支持](#support-支持)
+- [Render 渲染](#render-渲染)
 
-* Minimal design
 
-* Valid HTML5 code
+## Introduction 介绍
 
-* Post sharing
+An elegant, Pure & Material Design Theme for Hexo.  
+优雅、纯粹、质感的 Hexo 主题。
 
-* Subscription form
 
-* Supports Disqus Comments
+## Demo 演示
 
-* Instagram Feed
+- [Viosey's Blog](https://blog.viosey.com)
+- [neoFelhz's Blog](https://blog.nfz.moe)
+- [liyin's Blog](https://liyin.date)
 
-* Ionicons Icons
 
-* Google Fonts
+## Download 下载
 
+#### [Download latest release version](https://github.com/viosey/hexo-theme-material/releases/latest)
 
-* * *
+> Should be the most stable. Recommended for most users.  
+> 最稳定的版本，适合所有的用户。
 
-### Demo
+#### [Download latest canary branch](https://github.com/viosey/hexo-theme-material/archive/canary.zip)
 
-Check the theme in action [Demo](https://zolan-jekyll.netlify.app/)
+> Maybe unstable, but includes latest features. Recommended for developers.  
+> 包含最新的、尚在开发中的特性，可能不稳定；适合进阶用户。
 
-![Main page preview](https://github.com/artemsheludko/zolan/blob/master/images/zolan-main-page.png?raw=true)
+#### [Download other version](https://github.com/viosey/hexo-theme-material/releases)
 
-The post page would look like this:
+> You can decide which version to use. May no longer provide support.  
+> 你可以自己决定想要使用的版本；部分版本可能不再提供技术支持。
 
-![Post page preview](https://github.com/artemsheludko/zolan/blob/master/images/zolan-post.png?raw=true)
+#### [Download using git](https://github.com/viosey/hexo-theme-material/releases)
 
-* * *
+> You can using git to choose which branch you want. For developer only.  
+> 你可以自己决定想要使用的分支；仅限开发者使用。
 
-### Deployment
+```bash
+cd themes
+git clone https://github.com/viosey/hexo-theme-material.git material
+cd material
+git checkout {branch/tags name}
+```
 
-To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` or `bundle exec jekyll serve` to start the Jekyll server.
+----
 
-I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
+> ATTENTION! As the theme is developing, the theme config template will changes. To avoid conflict for users who are using `git pull` to upgrade the theme, we save the theme config template as `_config.template.yml`. You should make a copy of it and rename to `_config.yml`, then configure `_config.yml` when using the theme.  
+> **注意！** 在主题的开发迭代过程中，主题的配置文件模板 可能会改动。为了避免使用 `git pull` 更新主题的用户出现冲突，我们将 主题配置文件模板 命名为 `_config.template.yml`。配置主题时，你应该拷贝一份 `_config.template.yml` 并将其重命名为 `_config.yml`。
 
-* * *
+## Docs 文档
 
-### Posts
+[Material Theme Docs](https://material.viosey.com/docs/)
 
-To create a new post, you can create a new markdown file inside the \_posts directory by following the [recommended file structure](https://jekyllrb.com/docs/posts/#creating-post-files).
+[Material 主题文档](https://material.viosey.com/docs/)
 
-      ---
-      layout: post
-      title: Time to give gifts to everyone
-      date: 2018-08-23 16:04:00 +0300
-      image: 03.jpg
-      tags: Life
-      ---
+> [Docs Source Code](https://github.com/neko-dev/material-theme-docs)
 
 
-You can set the tags and the post image.
+## Contributing 贡献
 
-Add post images to **/images/** directory.
+All kinds of contributions (enhancements, new features, documentation & code improvements, issues & bugs reporting) are welcome.
 
-For tags, try to not add space between two words, for example, `Ruby on Rails`, could be something like (`ruby-on-rails`, `Ruby_on_Rails`, or `Ruby-on-Rails`).
+Before you start your contributing, please read the [Contributing Rules Wiki](https://github.com/viosey/hexo-theme-material/wiki) first.
 
-* * *
+欢迎各种形式的贡献，包括但不限于优化，添加功能，文档 & 代码的改进，问题和 bugs 的报告。期待你的 `Pull Request`。
 
-### Disqus Comments
+在参与贡献之前，请阅读[项目贡献 Wiki](https://github.com/viosey/hexo-theme-material/wiki)，了解如何为 Material 主题贡献。
 
-Zolan Theme comes with Disqus comments enabled.
+## Changelog 更新日志
 
-Open `_data/settings.yml` file, and change the `mr-brown` value on line 26 with your [Disqus account shortname](https://help.disqus.com/customer/portal/articles/466208).
+[View our release notes](https://github.com/viosey/hexo-theme-material/releases)
 
-      Comment Section (Disqus)
-      disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
+[阅读我们的更新日志](https://github.com/viosey/hexo-theme-material/releases)
 
 
-That’s all you need to setup Disqus from the theme side. If you get any issue regarding that comments are unable to load. First, make sure you have [registered your website with Disqus (Step 1)](https://help.disqus.com/customer/portal/articles/466182-publisher-quick-start-guide).
+## License 许可证
 
-And also check [Disqus troubleshooting guide](https://help.disqus.com/customer/portal/articles/472007-i-m-receiving-the-message-%22we-were-unable-to-load-disqus-%22) if you still have issues.
+[![license](https://img.shields.io/github/license/viosey/hexo-theme-material.svg?style=flat-square)](https://github.com/viosey/hexo-theme-material/blob/master/LICENSE)
 
-* * *
+Open sourced under the GPL v3.0 license.
 
-### Instagram
+根据 GPL V3.0 许可证开源。
 
-The Instagram feed is working using [Instafeed.js](http://instafeedjs.com/) to show the photos.
+## Support 支持
 
-First, you will need to get your account `userId` and `accessToken` from the following URLs:
+### BroswerStack
 
-*   userId: [http://codeofaninja.com/tools/find-instagram-user-id/](http://codeofaninja.com/tools/find-instagram-user-id/)
-*   accessToken: [instagram.pixelunion.net](http://instagram.pixelunion.net/)
+![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=V1VkWmJMRjJqcHBjN1BIVFRlNzExM05XUk5hemcydEpZTHRBdGd5V244ST0tLTlvNklDT1NuVXFDaTh0RDBnQ3RCdXc9PQ==--c986c45d7c10a3264f46b414944d6393ba74ea22%)
 
-Second, open the `js/common.js` file and replace the `userId` and `accessToken` values.
+Proudly using BrowserStack.
 
-    var instagramFeed = new Instafeed({
-          get: 'user',
-          limit: 6,
-          resolution: 'standard_resolution',
-          userId: '8987997106',
-          accessToken: '8987997106.924f677.8555ecbd52584f41b9b22ec1a16dafb9',
-          template: ''
-    });
+[![](https://i.loli.net/2017/09/27/59cbc16b0f8b4.png)](https://www.browserstack.com/)
 
+> **BrowserStack** is a cloud-based cross-browser testing tool that enables developers to test their websites across various browsers on different operating systems and mobile devices, without requiring users to install virtual machines, devices or emulators.
 
-Third, open the `_data/settings.yml` file and replace the `instafeed: false` on `instafeed: true` value.
+### jsDelivr
 
-    # Instagram Feed
-    instafeed: false # To enable the instafeed, use the value true. To turn off use the value false.
+Thanks jsDelivr for providing MaterialCDN service.
 
+> **jsDelivr** – Open Source CDN. free, fast, and reliable. You can using the files from GitHub or NPM and serve them using jsDelivr.
 
-* * *
+[![](https://data.jsdelivr.com/v1/package/npm/hexo-material/badge)](https://www.jsdelivr.com/package/npm/hexo-material)
 
-### Google Analytics
+[`http://cdn.jsdelivr.net/npm/hexo-material/source/`](http://cdn.jsdelivr.net/npm/hexo-material/source/)
 
-To integrate Google Analytics, open `_data/settings.yml`, and add your Google Analytics identifier.
+[![](https://data.jsdelivr.com/v1/package/gh/viosey/hexo-theme-material/badge)](https://www.jsdelivr.com/package/gh/viosey/hexo-theme-material)
 
-    # Google Analytics
-    google-analytics: # Add your identifier. For example UA-99631805-1
+[`https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material/source/`](https://cdn.jsdelivr.net/gh/viosey/hexo-theme-material/source/)
 
+## Render 渲染
 
-* * *
-
-### Update favicon
-
-You can find the current favicon (favicon.ico) inside the theme root directory, just replace it with your new favicon.
-
-* * *
-
-### Credits
-
-I have used the following scripts, fonts or other files as listed.
-
-*   [Google Fonts](https://fonts.google.com/specimen/Nunito) (Roboto, Sans Serif).
-*   [Ionicons Icons](https://ionicons.com/)
-*   [FitVids.js](http://fitvidsjs.com/)
-*   [Medium’s Image Zoom](https://github.com/fat/zoom.js)
-*   [Instafeed.js](http://instafeedjs.com/)
-*   [jQuery.com](https://jquery.com/)
-*   Preview Images form [unsplash.com](https://unsplash.com/), [pexels.com](https://www.pexels.com/)
-
-* * *
-### License
-
-Mit License
-
-* * *
-
-### Support
-<p>If you like the themes that I create you can become my sponsor on <a href="https://www.patreon.com/artemsheludko" target="_blank">Patreon</a>.
-<p align="center"><b>Thank you for your support ❤️</b></p>
+![Materia-overview-tiny.png](https://i.loli.net/2017/09/28/59cccb0b25520.png)

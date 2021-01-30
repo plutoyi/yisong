@@ -1,5 +1,11 @@
-_site
-.sass-cache
-.jekyll-metadata
-*.DS_Store
-Gemfile.lock
+.DS_Store
+
+npm-debug.log
+
+_config.yml
+
+node_modules
+
+.idea
+
+.directory
