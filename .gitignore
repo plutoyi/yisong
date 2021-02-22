@@ -1,11 +1,7 @@
 .DS_Store
-
-npm-debug.log
-
-_config.yml
-
-node_modules
-
-.idea
-
-.directory
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
